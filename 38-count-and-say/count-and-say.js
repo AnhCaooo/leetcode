@@ -14,15 +14,11 @@ var countAndSay = function(n) {
         let arrayOfArray = []
         // split `result` string into arr 
         let resultArr = result.split('')
-        console.log('ResultArr - ', resultArr)
         let appearance = 1
         for (let index = 0; index < resultArr.length; index++) {
-            // console.log("index", index, 'resultArr[index]', resultArr[index], 'resultArr[index + 1]', resultArr[index + 1])
             if (resultArr[index] === resultArr[index + 1 ] ) {
-                // console.log('current and following value are same -> increase appearance')
                 appearance++ 
             } else {
-                // console.log('current and following value are not same -> push to arrayOfArray')
                 // key - appear
                 arrayOfArray.push([resultArr[index], appearance])
                 // set appearance back to default
@@ -31,7 +27,6 @@ var countAndSay = function(n) {
         }
         result = castArrayOfArrayToString(arrayOfArray)
     }
-    console.log("End result", result)
     return result
 }
 
