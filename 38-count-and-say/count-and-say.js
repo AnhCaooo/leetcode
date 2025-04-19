@@ -6,9 +6,7 @@ var countAndSay = function(n) {
     }
 
     for (let i = 1; i <= n; i++ ) {
-        console.log(`=== [Round ${i}] ===`)
         if (i === 1) {
-            console.log("result after first round is 1")
             continue 
         }
         let arrayOfArray = []
